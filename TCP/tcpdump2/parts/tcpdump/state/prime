@@ -1,0 +1,10 @@
+!PrimeState
+dependency_paths: !!set {usr/local/lib: null}
+directories: !!set {sbin: null, share: null, share/man: null, share/man/man1: null}
+files: !!set {sbin/tcpdump: null, sbin/tcpdump.4.10.0-PRE-GIT: null, share/man/man1/tcpdump.1: null}
+project_options: {}
+properties:
+  override-prime: snapcraftctl prime
+  prime: ['*']
+scriptlet_metadata: !ExtractedMetadata
+  _data: {}

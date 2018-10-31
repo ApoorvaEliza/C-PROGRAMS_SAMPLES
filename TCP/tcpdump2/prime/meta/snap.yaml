@@ -1,0 +1,15 @@
+name: tcpdump-test
+version: 0.1
+summary: Testing Permissions
+description: Testing raw packet access
+architectures:
+- i386
+confinement: strict
+grade: stable
+apps:
+  tcpdump-test:
+    command: command-tcpdump-test.wrapper
+    plugs:
+    - network
+    - network-bind
+    - raw-usb

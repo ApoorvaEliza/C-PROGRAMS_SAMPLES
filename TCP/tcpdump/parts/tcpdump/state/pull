@@ -1,0 +1,26 @@
+!PullState
+assets:
+  build-packages: [libpcap-dev]
+  build-snaps: []
+  source-details: null
+  stage-packages: [libpcap0.8=1.7.4-2]
+extracted_metadata:
+  files: []
+  metadata: !ExtractedMetadata
+    _data: {}
+project_options: {deb_arch: i386}
+properties:
+  override-pull: snapcraftctl pull
+  parse-info: []
+  plugin: dump
+  source: .
+  source-branch: ''
+  source-commit: ''
+  source-depth: 0
+  source-subdir: ''
+  source-tag: ''
+  source-type: ''
+  stage-packages: [libpcap0.8]
+schema_properties: []
+scriptlet_metadata: !ExtractedMetadata
+  _data: {}

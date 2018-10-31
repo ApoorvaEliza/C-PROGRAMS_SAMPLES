@@ -1,0 +1,17 @@
+name: checkping
+version: 0.new
+summary: Single-line elevator pitch for your amazing snap
+description: |
+  This is my-snap's description. You have a paragraph or two to tell the
+  most important story about your snap. Keep it under 100 words though,
+  we live in tweetspace and your description wants to look good in the snap
+  store.
+architectures:
+- i386
+confinement: devmode
+grade: devel
+apps:
+  checkping:
+    command: command-checkping.wrapper
+    plugs:
+    - network
