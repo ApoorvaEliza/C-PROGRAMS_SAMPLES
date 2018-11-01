@@ -1,5 +1,5 @@
-name: tcpdump-test1
-version: 0.2
+name: tcpdump1
+version: 4
 summary: Testing Permissions
 description:
   Testing raw packet access
@@ -8,17 +8,20 @@ grade: devel
 
 
 parts:
-  tcpdump:
+  tcpdump1:
     plugin: dump
     source: .
     build-packages: [libpcap-dev]
     stage-packages: [libpcap0.8]
     stage:
-      - libpcap.so.1
       - tcpdump
+      - libpcap.so.1
+      - usr/lib
+      - usr/share
+    
     
 
 apps:
-  tcpdump-test1:
+  tcpdump1:
     command: ./tcpdump
     plugs: [network, network-bind, raw-usb]
